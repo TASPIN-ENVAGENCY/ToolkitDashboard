@@ -1,30 +1,38 @@
-
-library(dplyr)
-library(tidyr)
+# load packages ----
+## shiny stuff ----
+library(bslib)
 library(shiny)
-library(ggplot2)
-library(gridExtra)
 library(rsconnect)
-library(kableExtra)
 library(shinybusy)
+library(shinyWidgets)
+library(shinyalert)
+library(fontawesome)
+
+## rest ----
 library(data.table)
 library(purrr)
 library(DT)
 library(hetoolkit)
-library(shinyWidgets)
 library(GGally)
 library(leaflet)
 library(rnrfa)
 library(stringr)
-library(shinyalert)
-library(fontawesome)
-library(bslib)
+library(naniar)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(gridExtra)
+library(kableExtra)
+library(data.table)
+library(purrr)
+library(DT)
+library(hetoolkit)
 
 addResourcePath("prefix", "www")
 
 # runApp(launch.browser=TRUE)
 
-# overwrite plot_sitepca function
+# overwrite plot_sitepca function ----
 
 plot_sitepca_dash <- function(data = NULL,
                         vars = NULL,
