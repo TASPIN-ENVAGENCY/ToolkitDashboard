@@ -26,6 +26,8 @@ library(data.table)
 library(purrr)
 library(DT)
 library(hetoolkit)
+
+install.packages("naniar")
 library(naniar)
 
 addResourcePath("prefix", "www")
